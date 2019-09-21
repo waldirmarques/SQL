@@ -121,3 +121,8 @@ ALTER TABLE Consultas ADD CONSTRAINT horario CHECK(horario != NULL) /*Adiciona u
 ALTER TABLE Consultas DROP CONSTRAINT horario /*Remove um atributo de uma tabela com uma restrição*/
 
 DROP DATABASE Clinica /*Deleta todo o banco de dados*/
+
+
+SELECT genero, SUM(precoCusto)
+FROM Livros
+GROUP BY genero
